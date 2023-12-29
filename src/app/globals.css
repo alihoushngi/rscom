@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tag-text-color: #f8f8f2;
+  --className-color: #e6db74;
+  --attribute-name-color: #a6e22e;
+  --attribute-value-string-color: #e6db74;
+  --attribute-value-void-color: #fc929e;
+  --attribute-value-number-color: #b78eff;
+}
+
+body {
+  color: #ffffff;
+  background: rgb(9, 9, 37);
+}
+
+/** punctuation is for text and tag style in editor component style */
+.punctuation {
+  color: var(--tag-text-color);
+}
+
+/** class-name is for class name style in editor component style */
+.class-name {
+  color: var(--className-color);
+}
+
+/** attr-name is for attribute name style in editor component style */
+.attr-name {
+  color: var(--attribute-name-color);
+}
+
+/** attr-value-string is for attribute value strings type style in editor component style */
+.attr-value-string {
+  color: var(--attribute-value-string-color);
+}
+
+/** attr-value-void is for attribute value type void or call function in onClick for example style in editor component style */
+.attr-value-void {
+  color: var(--attribute-value-void-color);
+}
+
+/** attr-value-number is for attribute value number type in value(number) for example style in editor component style */
+.attr-value-number {
+  color: var(--attribute-value-number-color);
+}
